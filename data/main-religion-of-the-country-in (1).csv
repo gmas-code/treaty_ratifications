@@ -1,0 +1,242 @@
+Entity,Code,Main religion 
+Afghanistan,AFG,Islam
+Albania,ALB,Islam
+Algeria,DZA,Islam
+American Samoa,ASM,Christianity
+Andorra,AND,Christianity
+Angola,AGO,Christianity
+Anguilla,AIA,Christianity
+Antigua and Barbuda,ATG,Christianity
+Argentina,ARG,Christianity
+Armenia,ARM,Christianity
+Aruba,ABW,Christianity
+Asia-Pacific,,Hinduism
+Australia,AUS,Christianity
+Austria,AUT,Christianity
+Azerbaijan,AZE,Islam
+Bahamas,BHS,Christianity
+Bahrain,BHR,Islam
+Bangladesh,BGD,Islam
+Barbados,BRB,Christianity
+Belarus,BLR,Christianity
+Belgium,BEL,Christianity
+Belize,BLZ,Christianity
+Benin,BEN,Christianity
+Bermuda,BMU,Christianity
+Bhutan,BTN,Buddhism
+Bolivia,BOL,Christianity
+Bosnia and Herzegovina,BIH,Christianity
+Botswana,BWA,Christianity
+Brazil,BRA,Christianity
+British Virgin Islands,VGB,Christianity
+Brunei,BRN,Islam
+Bulgaria,BGR,Christianity
+Burkina Faso,BFA,Islam
+Burundi,BDI,Christianity
+Cambodia,KHM,Buddhism
+Cameroon,CMR,Christianity
+Canada,CAN,Christianity
+Cape Verde,CPV,Christianity
+Caribbean Netherlands,OWID_NLC,Christianity
+Cayman Islands,CYM,Christianity
+Central African Republic,CAF,Christianity
+Chad,TCD,Islam
+Channel Islands,OWID_CIS,Christianity
+Chile,CHL,Christianity
+China,CHN,Unaffiliated Religions
+Colombia,COL,Christianity
+Comoros,COM,Islam
+Congo,COG,Christianity
+Cook Islands,COK,Christianity
+Costa Rica,CRI,Christianity
+Cote d'Ivoire,CIV,Christianity
+Croatia,HRV,Christianity
+Cuba,CUB,Christianity
+Curacao,CUW,Christianity
+Cyprus,CYP,Christianity
+Czech Republic,CZE,Unaffiliated Religions
+Democratic Republic of Congo,COD,Christianity
+Denmark,DNK,Christianity
+Djibouti,DJI,Islam
+Dominica,DMA,Christianity
+Dominican Republic,DOM,Christianity
+Ecuador,ECU,Christianity
+Egypt,EGY,Islam
+El Salvador,SLV,Christianity
+Equatorial Guinea,GNQ,Christianity
+Eritrea,ERI,Christianity
+Estonia,EST,Unaffiliated Religions
+Ethiopia,ETH,Christianity
+Europe,,Christianity
+Faeroe Islands,FRO,Christianity
+Falkland Islands,FLK,Christianity
+Fiji,FJI,Christianity
+Finland,FIN,Christianity
+France,FRA,Christianity
+French Guiana,GUF,Christianity
+French Polynesia,PYF,Christianity
+Gabon,GAB,Christianity
+Gambia,GMB,Islam
+Georgia,GEO,Christianity
+Germany,DEU,Christianity
+Ghana,GHA,Christianity
+Gibraltar,GIB,Christianity
+Greece,GRC,Christianity
+Greenland,GRL,Christianity
+Grenada,GRD,Christianity
+Guadeloupe,GLP,Christianity
+Guam,GUM,Christianity
+Guatemala,GTM,Christianity
+Guinea,GIN,Islam
+Guinea-Bissau,GNB,Islam
+Guyana,GUY,Christianity
+Haiti,HTI,Christianity
+Honduras,HND,Christianity
+Hong Kong,HKG,Unaffiliated Religions
+Hungary,HUN,Christianity
+Iceland,ISL,Christianity
+India,IND,Hinduism
+Indonesia,IDN,Islam
+Iran,IRN,Islam
+Iraq,IRQ,Islam
+Ireland,IRL,Christianity
+Isle of Man,IMN,Christianity
+Israel,ISR,Judaism
+Italy,ITA,Christianity
+Jamaica,JAM,Christianity
+Japan,JPN,Unaffiliated Religions
+Jordan,JOR,Islam
+Kazakhstan,KAZ,Islam
+Kenya,KEN,Christianity
+Kiribati,KIR,Christianity
+Kosovo,OWID_KOS,Islam
+Kuwait,KWT,Islam
+Kyrgyzstan,KGZ,Islam
+Laos,LAO,Buddhism
+Latin America-Caribbean,,Christianity
+Latvia,LVA,Christianity
+Lebanon,LBN,Islam
+Lesotho,LSO,Christianity
+Liberia,LBR,Christianity
+Libya,LBY,Islam
+Liechtenstein,LIE,Christianity
+Lithuania,LTU,Christianity
+Luxembourg,LUX,Christianity
+Macao,MAC,Folk Religions
+Macedonia,MKD,Christianity
+Madagascar,MDG,Christianity
+Malawi,MWI,Christianity
+Malaysia,MYS,Islam
+Maldives,MDV,Islam
+Mali,MLI,Islam
+Malta,MLT,Christianity
+Marshall Islands,MHL,Christianity
+Martinique,MTQ,Christianity
+Mauritania,MRT,Islam
+Mauritius,MUS,Hinduism
+Mayotte,MYT,Islam
+Mexico,MEX,Christianity
+Micronesia (country),FSM,Christianity
+Middle East-North Africa,,Islam
+Moldova,MDA,Christianity
+Monaco,MCO,Christianity
+Mongolia,MNG,Buddhism
+Montenegro,MNE,Christianity
+Montserrat,MSR,Christianity
+Morocco,MAR,Islam
+Mozambique,MOZ,Christianity
+Myanmar,MMR,Buddhism
+Namibia,NAM,Christianity
+Nauru,NRU,Christianity
+Nepal,NPL,Hinduism
+Netherlands,NLD,Christianity
+New Caledonia,NCL,Christianity
+New Zealand,NZL,Christianity
+Nicaragua,NIC,Christianity
+Niger,NER,Islam
+Nigeria,NGA,Christianity
+Niue,NIU,Christianity
+North America,,Christianity
+North Korea,PRK,Unaffiliated Religions
+Northern Mariana Islands,MNP,Christianity
+Norway,NOR,Christianity
+Oman,OMN,Islam
+Pakistan,PAK,Islam
+Palau,PLW,Christianity
+Palestine,PSE,Islam
+Panama,PAN,Christianity
+Papua New Guinea,PNG,Christianity
+Paraguay,PRY,Christianity
+Peru,PER,Christianity
+Philippines,PHL,Christianity
+Poland,POL,Christianity
+Portugal,PRT,Christianity
+Puerto Rico,PRI,Christianity
+Qatar,QAT,Islam
+Reunion,REU,Christianity
+Romania,ROU,Christianity
+Russia,RUS,Christianity
+Rwanda,RWA,Christianity
+Saint Helena,SHN,Christianity
+Saint Kitts and Nevis,KNA,Christianity
+Saint Lucia,LCA,Christianity
+Saint Pierre and Miquelon,SPM,Christianity
+Saint Vincent and the Grenadines,VCT,Christianity
+Samoa,WSM,Christianity
+San Marino,SMR,Christianity
+Sao Tome and Principe,STP,Christianity
+Saudi Arabia,SAU,Islam
+Senegal,SEN,Islam
+Serbia,SRB,Christianity
+Seychelles,SYC,Christianity
+Sierra Leone,SLE,Islam
+Singapore,SGP,Buddhism
+Sint Maarten (Dutch part),SXM,Christianity
+Slovakia,SVK,Christianity
+Slovenia,SVN,Christianity
+Solomon Islands,SLB,Christianity
+Somalia,SOM,Islam
+South Africa,ZAF,Christianity
+South Korea,KOR,Unaffiliated Religions
+South Sudan,SSD,Christianity
+Spain,ESP,Christianity
+Sri Lanka,LKA,Buddhism
+Sub-Saharan Africa,,Christianity
+Sudan,SDN,Islam
+Suriname,SUR,Christianity
+Swaziland,SWZ,Christianity
+Sweden,SWE,Christianity
+Switzerland,CHE,Christianity
+Syria,SYR,Islam
+Taiwan,TWN,Folk Religions
+Tajikistan,TJK,Islam
+Tanzania,TZA,Christianity
+Thailand,THA,Buddhism
+Timor,TLS,Christianity
+Togo,TGO,Christianity
+Tokelau,TKL,Christianity
+Tonga,TON,Christianity
+Trinidad and Tobago,TTO,Christianity
+Tunisia,TUN,Islam
+Turkey,TUR,Islam
+Turkmenistan,TKM,Islam
+Turks and Caicos Islands,TCA,Christianity
+Tuvalu,TUV,Christianity
+Uganda,UGA,Christianity
+Ukraine,UKR,Christianity
+United Arab Emirates,ARE,Islam
+United Kingdom,GBR,Christianity
+United States,USA,Christianity
+United States Virgin Islands,VIR,Christianity
+Uruguay,URY,Christianity
+Uzbekistan,UZB,Islam
+Vanuatu,VUT,Christianity
+Vatican,VAT,Christianity
+Venezuela,VEN,Christianity
+Vietnam,VNM,Folk Religions
+Wallis and Futuna,WLF,Christianity
+Western Sahara,ESH,Islam
+World,OWID_WRL,Christianity
+Yemen,YEM,Islam
+Zambia,ZMB,Christianity
+Zimbabwe,ZWE,Christianity
