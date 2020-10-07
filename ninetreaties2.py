@@ -1,5 +1,11 @@
 # -*- coding: utf-8 -*-
 """
+Created on Wed Oct  7 19:19:57 2020
+
+@author: gusta
+"""
+# -*- coding: utf-8 -*-
+"""
 Created on Mon Sep 28 14:57:25 2020
 
 @author: gusta
@@ -12,6 +18,9 @@ import seaborn as sns
 import statsmodels.formula.api as smf
 import patsy
 
+# Idea is to merge these 9 treaty datasets, as modified for a date difference, and 4 independent variable datasets.
+
+# os.chdir(wherever your data is stored)
 
 iccpr = pd.read_excel("UnderlyingData_ICCPR_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
 icescr = pd.read_excel("UnderlyingData_ICESCR_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
@@ -49,20 +58,45 @@ for i in dataframes:
 for i in dataframes:
     i['difference']=i['difference'].dt.days
 
-## Wrong way of doing it
-##for i in dataframes:
-##    i['difference'] = pd.to_numeric(i['difference'])
-
-var_list =[]
-
 for i in dataframes:
-    var_list.append(np.var(i['difference']))
-
+    print(i.info())
 
 #Leaving only time difference
 
-i = [i.drop(['Date of Signature (dd/mm/yyyy)','Date of Ratification/Accession'],axis=1,inplace=True) for i in dataframes]
+i = [i.drop(['Date of Signature (dd/mm/yyyy)'],axis=1,inplace=True) for i in dataframes]
 
+i = [i.drop(['Date of Ratification/Accession'],axis=1,inplace=True) for i in dataframes]
+
+i = [i.drop(['Date of acceptance of individual communications procedure'],axis=1,inplace=True) for i in dataframes]
+
+
+icescr.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+cedaw.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+crc.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+catc.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+crpd.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+ced.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
+
+for i in dataframes:
+    i.set_index(keys='Country',inplace=True)
+
+# I could not find a way to merge in loop without errors
+
+full = pd.merge(iccpr,icescr,left_index=True, right_index=True)
+full = pd.merge(full,icerd,left_index=True, right_index=True)
+full = pd.merge(full,cedaw,left_index=True, right_index=True)
+full = pd.merge(full,crc,left_index=True, right_index=True)
+full = pd.merge(full,catc,left_index=True, right_index=True)
+full = pd.merge(full,crpd,left_index=True, right_index=True)
+full = pd.merge(full,crmw,left_index=True, right_index=True)
+full = pd.merge(full,ced,left_index=True, right_index=True)
+
+   
 #Getting the other datasets (experimental)
 #These are taken from Our World in Data
 
@@ -75,56 +109,16 @@ independents = [democracy,av_gdp,hdi,religion]
 
 idps = [idps.rename({"Entity":"Country"},axis=1,inplace=True) for idps in independents]
 
-#An experimental merge. Quite messy.
+for i in independents:
+    i.set_index(keys='Country',inplace=True)
 
-id2 = [iccpr, democracy,av_gdp,hdi,religion]
+# This part of the merge does not work
 
-id2 = [iccpr, democracy,av_gdp,hdi,religion]
+full = pd.merge(full,democracy,left_index=True, right_index=True)
+full = pd.merge(full,av_gdp,left_index=True, right_index=True)
+full = pd.merge(full,hdi,left_index=True, right_index=True)
+full = pd.merge(full,religion,left_index=True, right_index=True)
 
-id3 = [iccpr,icescr,icerd,cedaw,crc,catc,crpd,crmw,ced,democracy,av_gdp,hdi,religion]
-
-result = pd.concat([independents], axis=1,join='inner',keys='Country')
-result2 = pd.concat(id2, axis=1,join='inner',keys='Country')
-results3 = pd.concat(id3, axis=1,join='inner',keys='Country')
-
-
-iccpr2 = iccpr.merge(democracy,on="Country")
-iccpr2 = iccpr2.merge(av_gdp,on="Country")
-iccpr2 = iccpr2.merge(hdi,on="Country")
-iccpr2 = iccpr2.merge(religion,on="Country")
-
-
-iccpr2.drop(['Code_x','Code_y', 'Year_x','Code_x', 'Year_y','Code_y'],axis=1,inplace=True)
-iccpr2.head()
-iccpr2.columns
-iccpr2.rename({'Date of Ratification/Accession':'Date',
-       'Age of democracies at the end of 2015 (Boix, Miller, and Rosato, 2013, 2018)':'Age',
-       'Real GDP per capita in 2011US$, multiple benchmarks (Maddison Project Database (2018))':'AvGDP',
-       'Human Development Index (UNDP)':'GDP', 'Main religion ':'Religion'},axis=1,inplace=True)
-
-iccpr2.head()
-
-pd.plotting.scatter_matrix(result2)
-
-iccpr2['Age']=iccpr2['Age'].replace('Not a democracy in 2015',0)
-
-iccpr2['Age'] = pd.to_numeric(iccpr2['Age'])
-mod3 = smf.ols(formula='difference ~ Age',data=iccpr2)
-res = mod3.fit()
-print(res.summary())
-
-iccpr2.to_csv('iccpr2.csv')
-
-
-patsy.dmatrices('difference ~ Age',data=iccpr2)
-
-
-
-
-
-
-
-
-
-
+# End result is not what is intended
+full.info()
 
