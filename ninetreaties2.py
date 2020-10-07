@@ -12,7 +12,6 @@ import seaborn as sns
 import statsmodels.formula.api as smf
 import patsy
 
-os.chdir("C:/Users/gusta/Desktop/Python Notebooks/nine_treaties")
 
 iccpr = pd.read_excel("UnderlyingData_ICCPR_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
 icescr = pd.read_excel("UnderlyingData_ICESCR_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
@@ -121,16 +120,6 @@ patsy.dmatrices('difference ~ Age',data=iccpr2)
 
 
 
-
-### For getting files quicklier. Not baked
-
-#directory = 'data/'
-#files = []
-
-#for filename in os.listdir(directory):
-#    files.append(filename)
-
-#print(files)
 
 
 
