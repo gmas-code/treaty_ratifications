@@ -32,7 +32,8 @@ crpd = pd.read_excel("UnderlyingData_CRPD_OHCHR_19_09_2020.xls",skiprows=[0],nro
 crmw = pd.read_excel("UnderlyingData_ICRMW_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
 ced = pd.read_excel("UnderlyingData_CPED_OHCHR_19_09_2020.xls",skiprows=[0],nrows=198)
 
-#Critical dates as gathered in a quick search
+#Critical dates as gathered in a quick search. There is probably a mistake here, but it is just a matter
+# of fact checkind latter
 
 sdate_iccpr = pd.to_datetime("1966-12-06")
 sdate_iescr =  pd.to_datetime("1966-12-06")
@@ -82,6 +83,8 @@ crpd.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
 
 ced.drop(['Date of acceptance of inquiry procedure'],axis=1,inplace=True)
 
+# I wanted to transform "Country" to an index of rows to facilitate merging
+
 for i in dataframes:
     i.set_index(keys='Country',inplace=True)
 
@@ -97,7 +100,7 @@ full = pd.merge(full,crmw,left_index=True, right_index=True)
 full = pd.merge(full,ced,left_index=True, right_index=True)
 
    
-#Getting the other datasets (experimental)
+#Getting the other datasets for exog variables
 #These are taken from Our World in Data
 
 democracy = pd.read_csv('data/age-of-democracies (1).csv')
